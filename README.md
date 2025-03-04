@@ -17,3 +17,6 @@ Fail2Ban installed in order to prevent those pesky attackers from spamming conne
 
 # PHPMYADMIN
 For easy access and management of MYSQL services.
+
+# Scripts
+To analyze logs
