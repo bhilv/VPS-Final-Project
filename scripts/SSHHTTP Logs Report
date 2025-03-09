@@ -1,0 +1,132 @@
+SSH Logs Report - 
+Over the course of five weeks 4447 of our estimated 5309 came from the top ten attackers from each week. A notable trend is that the majority of our attacks originated from eastern europe (71.5%). 20.2% of attacks sourced from Hungary, 25.1% sourced from Romania, 7.2% of attacks sourced from Lithuania and finally 19% originating  from Russia. The most persistent attacker was located within Budapest, Hungary. This IP (92.118.39.86) Holds the record for most attacks, as well as the IP that was banned most often. From week one to week two there was a +49.9% increase in frequency of attacks. From week two to week three there was a -18.9% decrease in attacks. From week three to week four there was a +18.3% increase in attack frequency. From week four to week five there was a 66.8% decrease in attacks. The sharp decrease in attacks week five can be attributed to the date of which we collected log data. We collected and analyzed the data halve way through the week, leading to a significant decrease in number of attacks. 
+	When it came to securing SSH in our server, our team had many systems in place to avoid vulnerabilities and exploits. The most important step in monitoring our security was installing and utilizing fail2ban services. When monitoring our ssh service we throttled the maximum allowed connections at five, as well as limiting the threshold for attempts at three before being banned. Our group completely disabled root login via SSH. Along with these we disabled password ssh access and enabled public/private keypair login only. These measures ensured that it was increasingly unlikely that our server would be accessed without our knowledge and permission. Below is a week by week break down of the SSH attacks
+ 
+Week 1: Total Number Of Attacks -  892
+-------------------
+Top Attackers for Week 1:
+92.118.39.86, Budapest Hungary      - 166 attacks
+14.63.196.175, Seoul Korea    	 - 112 attacks
+92.118.39.72, Budapest Hungary      	  - 107 attacks
+193.32.162.139, Timisoara Romania   - 87 attacks
+2.57.122.192, Timisoara Romania       - 86 attacks
+195.178.110.76, Lelystad Netherlands     - 84 attacks
+164.90.192.91, Amsterdam Netherlands      - 83 attacks
+92.255.85.188, Moscow Russia               - 78 attacks
+92.255.85.189, Moscow Russia              - 65 attacks
+193.32.162.135, Timisoara Romania     - 53 attacks
+
+
+Week 2: Total Number of Attacks -  1332
+-------------------
+Top Attackers for Week 2:
+92.118.39.86, Budapest Hungary        - 131 attacks
+45.156.22.100, Helsinki Finland         - 105 attacks
+194.0.234.38, Vilnius Lithuania          - 84 attacks
+194.0.234.37, Vilnius Lithuania          - 77 attacks
+193.32.162.137, Timisoara Romania  - 77 attacks
+92.255.85.189, Moscow Russia          - 75 attacks
+193.32.162.79, Timisoara Romania      - 75 attacks
+185.224.3.211, Vienna Austria           - 68 attacks
+139.59.190.76, London England      - 67 attacks
+92.255.85.188, Moscow Russia      - 65 attacks
+
+
+
+
+
+Week 3: Total Number of Attacks - 1181
+------------------- 
+Top Attackers for Week 3:
+2.57.122.193, Timisoara Romania         - 228 attacks
+92.118.39.86,  Budapest Hungary         - 125 attacks
+92.255.85.188, Moscow Russia             - 95 attacks
+193.32.162.131, Timisoara Romania      - 90 attacks
+92.255.85.189, Moscow Russia      - 83 attacks
+193.32.162.133, Timisoara Romania     - 78 attacks
+37.44.238.88, Vélizy-Villacoublay France       - 62 attacks
+194.0.234.38, Vilnius Lithuania        - 60 attacks
+193.32.162.134, Timisoara Romania   - 60 attacks
+194.0.234.37, Vilnius Lithuania        - 59 attacks
+
+
+
+Week 4: Total Number of Attacks - 1279
+-------------------
+Top Attackers for Week 4:
+92.118.39.86, Budapest Hungary       - 175 attacks
+92.255.85.189,  Moscow Russia     - 130 attacks
+218.92.0.171, Shanghai China       - 110 attacks
+92.255.85.188, Moscow Russia      - 109 attacks
+209.38.29.250, Sydney Australia      - 99 attacks
+104.131.10.119, Clifton New Jersey (US)     - 91 attacks
+193.32.162.135, Timisoara Romania     - 84 attacks
+218.92.0.170, Shanghai China       - 66 attacks
+2.57.122.186, Timisoara Romania     - 61 attacks
+37.44.238.88, Vélizy-Villacoublay France      - 57 attacks
+
+
+
+
+Week 5: Total Number of Attacks - 625
+-------------------
+Top Attackers for Week 5:
+92.118.39.86, Budapest Hungary       - 114 attacks
+92.255.85.188, Moscow Russia      - 65 attacks
+92.255.85.189, Moscow Russia      - 56 attacks
+37.44.238.88, Vélizy-Villacoublay France       - 53 attacks
+193.32.162.135, Timisoara Romania     - 51 attacks
+194.0.234.35, Vilnius Lithuania      - 33 attacks
+193.32.162.134, Timisoara Romania     - 30 attacks
+92.118.39.74, Budapest Hungary       - 30 attacks
+92.118.39.75, Budapest Hungary       - 27 attacks
+193.32.162.137, Timisoara Romania     - 26 attacks
+
+
+HTTP Logs Report - 
+	Notable takeaways from the HTTP logs is there is no region or geographic location that contains the majority of the HTTP attack sources. The a plurality of the attacks where sourced from NATO countries (29.4%). Netherland boasts the highest frequency of attackers, 16.3% of all attacks. Source countries like England, France, Germany, and the United States making up the rest of the 29.3% figure. From week three to week four there was a +72.7% increase in attack frequency. From week four to week five there was a -55.1% decrease in attack frequency. Week four of our HTTP logs proved to be unusually busy. Week five, similar to the reason in the SSH report, had a significant decrease in log count due to lof collection occurring half way through the week. Most common HTTP attack vectors included but are not limited to; SQL injection attempts, malicious SQL queries, remote code execution via apache exploit and DoS attack attempts.
+	Ways that http attacks can prevented in servers such as ours includes but is not limited to; use prepared statements to prevent sql injection ( parameterized queries ), web application firewalls, input validation and sanitization, keeping PHP and APACHE regularly updated, and using HTTPS with SSL/TLS.
+	
+
+Week 3: Total Number of Attacks (HTTP) - 3325
+-------------------
+204.76.203.18, Kerkrade Netherlands       - 725 attacks
+193.41.206.36, Paris France     - 157 attacks
+45.148.10.34, Lelystad Netherlands       - 57 attacks
+78.153.140.151, London England      - 52 attacks
+202.152.81.97, Kuala Brunei       - 45 attacks
+78.153.140.177, London England      - 30 attacks
+193.68.89.51, Kerkrade Netherlands       - 26 attacks
+45.148.10.90, Lelystad Netherlands        - 20 attacks
+45.82.79.102, Hong Kong China        - 19 attacks
+35.94.201.33, Boardman Oregon (US)        - 18 attacks
+
+
+Week 4: Total Number of Attacks (HTTP) - 5742
+-------------------
+204.76.203.18, Kerkrade Netherlands       - 725 attacks
+193.41.206.176, Paris France      - 218 attacks
+139.144.52.241, Atlanta Georgia (US)      - 202 attacks
+193.41.206.202, Paris France      - 179 attacks
+193.41.206.138, Paris France      - 157 attacks
+45.148.10.35, Lelystad Netherlands       - 89 attacks
+45.148.10.90, Lelystad Netherlands       - 75 attacks
+45.148.10.34, Lelystad Netherlands        - 57 attacks
+195.178.110.163, Lelystad Netherlands     - 54 attacks
+78.153.140.179, London England      - 53 attacks
+
+
+Week 5: Total Number of Attacks (HTTP) - 2575
+-------------------
+68.71.49.111, Quebec Canada        - 341 attacks
+144.126.146.166, Seattle Washington (US)     - 177 attacks
+205.162.203.60 Stillwater Oklahoma (US)      - 151 attacks
+195.178.110.163 Lelystad Netherlands     - 104 attacks
+45.148.10.90, Lelystad Netherlands        - 56 attacks
+141.11.62.62 Amsterdam Netherlands        - 45 attacks
+78.153.140.222, London England      - 44 attacks
+45.148.10.35, Lelystad Netherlands        - 24 attacks
+64.227.70.2, Amsterdam Netherlands         - 19 attacks
+209.38.248.17, Frankfurt am Main Germany       - 19 attacks
+
+
