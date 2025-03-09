@@ -2,7 +2,7 @@
 The Repository for our final project in SVAD-116 (Linux Administration)
 
 # A WebPage
-An apache2, openssh, and mysql server running on an Ubuntu Virtual Machine.
+Apache2, openssh, and mySQL services running on an Ubuntu Virtual Machine.
 
 # No GUI
 The way it was supposed to be.
