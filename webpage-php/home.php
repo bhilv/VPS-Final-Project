@@ -1,7 +1,7 @@
 <?php 
 include('./conn/conn.php'); 
 
-// Protect this page – allow access only if user is logged in
+// Protect this page â€“ allow access only if user is logged in
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
     exit();
@@ -46,8 +46,8 @@ if (!isset($_SESSION['username'])) {
 
     <div class="container mt-5 text-center">
         <?php 
-            // Example PHP content on the home page
-            $videoID = "dQw4w9WgXcQ";  // Example YouTube video ID
+            // Place video content on page
+            $videoID = "dQw4w9WgXcQ";  // Video id link
         ?>
         <!-- Button to Show and Autoplay Video (just an example feature on the dashboard) -->
         <button class="btn btn-primary" onclick="showVideo()">Play YouTube Video</button>
@@ -70,7 +70,7 @@ if (!isset($_SESSION['username'])) {
             videoContainer.style.display = "block";
         }
     </script>
-    <!-- Bootstrap JS (optional) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
